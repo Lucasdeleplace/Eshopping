@@ -1,0 +1,38 @@
+.clothes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 75px;
+  width: min-content;
+  margin-left: 105px;
+}
+
+.label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4da6d; /* Couleur de fond similaire */
+  transform: skew(-5deg); /* Inclinaison du rectangle en diagonale */
+  margin: 20px; /* Pour espacer le label des autres éléments */
+}
+
+.label span {
+  display: inline-block;
+  transform: skew(5deg); /* Redresse le texte pour annuler l'inclinaison */
+  color: #000; /* Couleur du texte en noir */
+}
+
+.slogan {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  text-align: left;
+  margin-left: 60px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajustez la hauteur maximale selon vos besoins */
+    object-fit: cover; /* Pour une mise à l'échelle correcte */
+}
