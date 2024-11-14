@@ -1,15 +1,9 @@
-/* Coder le header en react (pas JS on main).
-
-Documentation : 
-https://www.dhiwise.com/post/building-a-react-header-a-step-by-step-guide 
-https://upmostly.com/tutorials/react-onclick-event-handling-with-examples
-Finalement, pas besoin de faire de boutons ici. */
 import React from 'react';
-import './components/Header.css';
+import './components/Footer.css';
 
-function Header() {
+function Footer() {
     return (
-        <Header>
+        <Footer>
             {
                 /* <img src="logo.png" alt="Company Logo" className="logo" />*/
                 <nav>
@@ -22,9 +16,9 @@ function Header() {
                     </ul>
                 </nav>
             }
-        </Header>
+        </Footer>
     );
 }
 
-export default Header; 
+export default Footer; 
            
