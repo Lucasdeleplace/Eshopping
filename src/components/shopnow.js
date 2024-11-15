@@ -4,13 +4,17 @@ import Pinkgirl from "../assets/Pinkgirl.png"; // Chemin relatif à partir du co
 
 function Shopnow() {
   return (
-    <div class="container">
-      <p class="clothes">LET'S EXPLORE <div class="label"> <span>UNIQUE</span> </div> CLOTHES</p>
-      <p class="slogan">Live for influential and innovative fashion</p>
+    <div className="outer-container">
+    <div className="container">
+      <div className="text-content">
+      <p className="clothes">LET'S EXPLORE <div className="label"> <span>UNIQUE</span> </div> CLOTHES.</p>
+      <p className="slogan">Live for influential and innovative fashion !</p>
       <button>
         <a href="Lecatalog">Shop Now</a>
       </button>
-      <img src={Pinkgirl} alt="PinkGirl" class="image" />
+      </div>
+      <img src={Pinkgirl} alt="PinkGirl" className="image" />
+      </div>
       </div>
   );
 }
