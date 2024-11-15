@@ -1,0 +1,45 @@
+.header {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  .sectionsheader {
+    display: flex;
+    justify-content: space-between; 
+    position: right;
+    padding-right: 50px;
+    margin-right: 10px;
+    margin-top: 13px;
+    margin-left: 50%;
+    
+  }
+  .active {
+    float: left;
+    position: left;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    margin: 10;
+    padding: 10;
+  }
+  .signup {
+    color: #FFFFFF;
+  }
+  .rectangle {
+    border-radius: 15px; 
+    background-color: #000000; 
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  };

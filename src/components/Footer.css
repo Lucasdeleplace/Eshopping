@@ -1,23 +1,83 @@
+/* Footer global */
 .footer {
-    background-color: #000000;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    display: flex;
-    /*justify-content: space-between;
-    align-items: flex-end;  Mise en commentaire pour éviter les bugs.*/
-  }
-  .gray {
-    color: #8E8E8E;
-  }
-  .right-al {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .fashiona {
-    display: flex;
-    align-items: left;
-  }
-  .fashion {
-    font-weight: bold;
-  }
+  background-color: #000000;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Section gris clair */
+.gray {
+  color: #8E8E8E;
+}
+
+/* Style de la liste */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Alignement à droite pour les éléments */
+.right-al {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+/* Alignement de la section Fashion */
+.fashiona {
+  display: flex;
+  align-items: flex-start; /* align-items: left n'est pas valide, on peut utiliser flex-start */
+}
+
+/* Mettre en gras les liens "Fashion" */
+.fashion {
+  font-weight: bold;
+}
+
+/* Structure des listes avec un espace entre les éléments */
+.lister {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 50px;
+  margin-right: 10px;
+  margin-top: 13px;
+  margin-left: auto; /* Utilisation de auto pour centrer l'élément de manière correcte */
+}
+
+/* Liens : enlever la décoration et ajouter du padding et margin */
+a {
+  text-decoration: none;
+  color: #8E8E8E;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Rectangle avec un fond doré */
+.rectangle1 {
+  border-radius: 15px;
+  background-color: #EBD96B;
+  padding: 5px;
+  width: 50px; /* Je recommande une largeur plus grande pour le bouton */
+  height: 50px; /* Idem pour la hauteur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pour centrer l'image à l'intérieur du bouton */
+.rectangle1 img {
+  width: 80%;  /* Redimensionner l'image pour qu'elle s'ajuste bien */
+  height: auto;
+}
+
+/* Ajouter un effet au survol sur les liens */
+a:hover {
+  color: #FFD700;  /* Changer la couleur au survol pour un effet interactif */
+}
