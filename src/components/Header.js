@@ -1,26 +1,32 @@
 import React from "react";
 import "./Header.css";
+import Logo from "./logo.svg";
 
 function Header() {
   return (
     <header>
       <nav>
         <ul>
+        <img src={Logo} alt="logo du site fashion" class="active" width="200" height="50"></img>
+        <div class="sectionsheader">
           <li>
-            <a href="/catalogue">CATALOGUE</a>
+            <a href="link">CATALOGUE</a>
           </li>
           <li>
-            <a href="/fashion">FASHION</a>
+            <a href="link">FASHION</a>
           </li>
           <li>
-            <a href="/favourite">FAVOURITE</a>
+            <a href="link">FAVORITE</a>
           </li>
           <li>
-            <a href="/lifestyle">LIFESTYLE</a>
+            <a href="link">LIFESTYLE</a>
           </li>
           <li>
-            <a href="signup">SIGN UP</a>
+            <element class="rectangle">
+            <a class="signup" href="link">SIGN UP</a>
+            </element>
           </li>
+          </div>
         </ul>
       </nav>
     </header>
