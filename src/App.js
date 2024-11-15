@@ -1,10 +1,11 @@
-import './App.css';
-import Shopnow from './components/shopnow';
+import "./App.css";
+import Acceuil from "./pages/Acceuil";
+
 
 function App() {
   return (
     <div className="App">
-     <Shopnow />
+      <Acceuil />
     </div>
   );
 }
