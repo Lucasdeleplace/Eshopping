@@ -1,0 +1,80 @@
+.clothes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 70px;
+  width: min-content;
+  margin-left: 105px;
+}
+
+.label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4da6d; /* Couleur de fond similaire */
+  transform: skew(-5deg); /* Inclinaison du rectangle en diagonale */
+  margin: 20px; /* Pour espacer le label des autres éléments */
+}
+
+.label span {
+  display: inline-block;
+  transform: skew(5deg); /* Redresse le texte pour annuler l'inclinaison */
+  color: #000; /* Couleur du texte en noir */
+}
+
+.slogan {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  text-align: left;
+  margin-left: 60px;
+}
+
+.image {
+  width: 65%; /* Limite la largeur de l'image à 50% du conteneur */
+  height: auto; /* Conserve les proportions de l'image */
+  object-fit: cover; /* Maintient les proportions sans déformation */
+}
+
+.container {
+  display: flex; /* Utilise flexbox pour aligner le texte et l'image */
+  align-items: flex-end; /* Aligne les éléments au sommet */
+  background-color: #c2c8da; /* Applique la couleur de fond */
+  padding: 20px;
+  position: relative;
+  width: 65%; /* Prend toute la largeur disponible */
+}
+
+.outer-container {
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement *//* Espacement entre les éléments texte et bouton */
+  flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Aligne l'image à gauche */
+  position: relative;
+  flex-shrink:initial; /* L'image ne rétrécira pas si le conteneur est plus petit */
+  height: 100%; /* Prend toute la hauteur disponible du conteneur */
+}
+
+button {
+  color: white;
+  background-color: #000; /* Couleur de fond du bouton */
+  border: none;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transform: skew(-5deg); /* Inclinaison du rectangle en diagonale */
+}
+
+a {
+  text-decoration: none; /* Retire le soulignement du lien */
+  color: white;
+}
