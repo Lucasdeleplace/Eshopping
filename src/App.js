@@ -1,10 +1,10 @@
 import './App.css';
-import Shopnow from './components/shopnow';
+import Payday from './components/Payday.js';
 
 function App() {
   return (
     <div className="App">
-     <Shopnow />
+     <Payday />
     </div>
   );
 }
