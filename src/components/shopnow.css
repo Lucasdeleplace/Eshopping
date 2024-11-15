@@ -51,7 +51,7 @@
 
 .text-content {
   display: flex;
-  flex-direction: column; /* Empile les éléments verticalement *//* Espacement entre les éléments texte et bouton */
+  flex-direction: column; /* Empile les éléments verticalement */ /* Espacement entre les éléments texte et bouton */
   flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
 }
 
@@ -59,7 +59,7 @@
   display: flex;
   justify-content: flex-start; /* Aligne l'image à gauche */
   position: relative;
-  flex-shrink:initial; /* L'image ne rétrécira pas si le conteneur est plus petit */
+  flex-shrink: initial; /* L'image ne rétrécira pas si le conteneur est plus petit */
   height: 100%; /* Prend toute la hauteur disponible du conteneur */
 }
 
