@@ -1,0 +1,87 @@
+.clothes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 70px;
+  width: min-content;
+  margin-left: 175px;
+}
+.gras{ 
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  margin-left: 175px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  margin-left: 175px;
+}
+
+.label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white; 
+  transform: skew(-5deg);
+  margin: 20px; 
+}
+
+.label span {
+  display: inline-block;
+  transform: skew(5deg);
+  color: #000; 
+}
+
+.image {
+  width: 45%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.container {
+  display: flex; 
+  text-align: justify-content;
+  background-color:#E6C744;
+  padding: 20px;
+  position: relative;
+  width: 65%;
+}
+
+.outer-container {
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  text-align: justify;
+  flex-direction: column; 
+  flex-grow:unset;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-shrink:0; 
+  height: 100%; 
+}
+
+button {
+  color: white;
+  background-color: #000; 
+  border: none;
+  padding: 10px 20px;
+  margin-left: 165px;
+  margin-right: 255px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transform: skew(-5deg); 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
