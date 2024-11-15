@@ -1,10 +1,10 @@
-import './App.css';
-import Payday from './components/Payday.js';
+import "./App.css";
+import Acceuil from "./pages/Acceuil";
 
 function App() {
   return (
     <div className="App">
-     <Payday />
+      <Acceuil />
     </div>
   );
 }
