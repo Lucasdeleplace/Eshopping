@@ -1,5 +1,5 @@
 import React from "react";
-import "./shopnow.css";
+import "./Shopnow.css";
 import Pinkgirl from "../assets/Pinkgirl.png"; // Chemin relatif à partir du composant
 
 function Shopnow() {
