@@ -1,83 +1,142 @@
 /* Footer global */
 .footer {
   background-color: #000000;
-  padding: 10px 20px;
+  padding: 20px;
   color: #FFFFFF;
   display: flex;
+  flex-wrap: wrap; /* Permet d'ajuster l'affichage des colonnes sur petits écrans */
   justify-content: space-between;
-  align-items: flex-end;
+  text-align: left;
 }
 
-/* Section gris clair */
-.gray {
-  color: #8E8E8E;
+#fashiony {
+  margin-top: auto;
+  padding-top: 4px;
 }
 
-/* Style de la liste */
-ul {
+/* Pour chaque colonne */
+.footer-column {
+  flex: 1 1 22%; /* Chaque colonne prend 22% de la largeur (ce qui permet d'avoir 4 colonnes sur un grand écran) */
+  margin: 10px; /* Marge pour espacer les colonnes */
+}
+
+/* Colonne Fashion */
+.fashion-column ul {
   list-style-type: none;
-  overflow: hidden;
   padding: 0;
-  margin: 0;
 }
 
-/* Alignement à droite pour les éléments */
-.right-al {
+.fashion-column .social-icons {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
+  margin-top: 10px;
 }
 
-/* Alignement de la section Fashion */
-.fashiona {
-  display: flex;
-  align-items: flex-start; /* align-items: left n'est pas valide, on peut utiliser flex-start */
+/* Réduire la taille des icônes au survol */
+.fashion-column .social-icons a img {
+  transition: transform 0.3s ease;
 }
 
-/* Mettre en gras les liens "Fashion" */
-.fashion {
-  font-weight: bold;
+.fashion-column .social-icons a:hover img {
+  transform: scale(1.1); /* Agrandir légèrement l'icône au survol */
 }
 
-/* Structure des listes avec un espace entre les éléments */
-.lister {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding-right: 50px;
-  margin-right: 10px;
-  margin-top: 13px;
-  margin-left: auto; /* Utilisation de auto pour centrer l'élément de manière correcte */
+/* Menu colonne (Company) */
+.menu-column ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Liens : enlever la décoration et ajouter du padding et margin */
-a {
+.menu-column a {
   text-decoration: none;
   color: #8E8E8E;
-  margin: 10px;
-  padding: 10px;
+  display: block;
+  margin: 5px 0;
 }
 
-/* Rectangle avec un fond doré */
-.rectangle1 {
-  border-radius: 15px;
-  background-color: #EBD96B;
-  padding: 5px;
-  width: 50px; /* Je recommande une largeur plus grande pour le bouton */
-  height: 50px; /* Idem pour la hauteur */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu-column a:hover {
+  color: #FFD700; /* Changer la couleur au survol */
 }
 
-/* Pour centrer l'image à l'intérieur du bouton */
-.rectangle1 img {
-  width: 80%;  /* Redimensionner l'image pour qu'elle s'ajuste bien */
-  height: auto;
+/* Colonne Quick Links */
+.quick-links-column ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Ajouter un effet au survol sur les liens */
+.quick-links-column a {
+  text-decoration: none;
+  color: #8E8E8E;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Sélecteur pour les liens dans la section 'Company' */
+.footer .headera {
+  color: #FFFFFF; /* Blanc pour les en-tête de sections */
+}
+
+.footer .greya {
+  color: #8E8E8E;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Colonne Legal */
+.legal-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.legal-column a {
+  text-decoration: none;
+  color: #8E8E8E;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Colonne - Liens au survol */
 a:hover {
-  color: #FFD700;  /* Changer la couleur au survol pour un effet interactif */
+  color: #FFD700;
+}
+
+/* Responsive Design : Pour les petits écrans */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column; /* Les colonnes deviennent une seule colonne */
+      align-items: center; /* Centrer le contenu */
+  }
+
+  .footer-column {
+      flex: 1 1 100%; /* Chaque section prend toute la largeur */
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .fashion-column .social-icons {
+      justify-content: center;
+  }
+}
+/* Style des icônes sociales avec un fond coloré et des bords arrondis */
+.fashion-column .social-icons a {
+  display: inline-block;  /* Permet d'ajuster l'élément comme un bloc */
+  background-color: #EBD96B;  /* Couleur de fond (dorée ou autre) */
+  padding: 12px;  /* L'espace autour du logo, ajusté pour rendre le carré plus grand que l'icône */
+  border-radius: 30%;  /* Bord arrondi. */
+  transition: transform 0.3s ease, background-color 0.3s ease;  /* Animation pour l'effet au survol */
+  margin: 5px;  /* Espacement entre les icônes */
+  box-sizing: content-box;  /* Garantit que padding ne modifie pas la taille du carré */
+}
+
+/* Taille des icônes */
+.fashion-column .social-icons a img {
+  width: 25px;  /* Largeur de l'icône */
+  height: 25px;  /* Hauteur de l'icône */
+  object-fit: cover;  /* Assure que l'image reste dans les dimensions spécifiées sans déformation */
+}
+
+/* Effet au survol */
+.fashion-column .social-icons a:hover {
+  background-color: #FFD700;  /* Changer la couleur de fond au survol */
+  transform: scale(1.1);  /* Agrandir légèrement l'icône et le fond au survol */
 }
