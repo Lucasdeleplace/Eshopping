@@ -1,10 +1,10 @@
-import './App.css';
-import Logo from './components/Logo';
+import "./App.css";
+import Acceuil from "./pages/Acceuil";
 
 function App() {
   return (
     <div className="App">
-     <Logo/>
+      <Acceuil />
     </div>
   );
 }
