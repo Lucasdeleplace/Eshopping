@@ -46,7 +46,7 @@ p {
   background-color:#E6C744; /* Applique la couleur de fond */
   padding: 20px;
   position: relative;
-  width: 65%; /* Prend toute la largeur disponible */
+  width: 100%; /* Prend toute la largeur disponible */
 }
 
 .outer-container {
@@ -71,7 +71,7 @@ p {
   height: 100%; /* Prend toute la hauteur disponible du conteneur */
 }
 
-button {
+.catalog {
   color: white;
   background-color: #000; /* Couleur de fond du bouton */
   border: none;
