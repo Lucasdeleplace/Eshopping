@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Shopnow from "../components/Shopnow";
+import Logo from "../components/Logo.js";
 import Payday from "../components/Payday";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
@@ -14,6 +15,7 @@ function Acceuil() {
     <div className="acceuil">
       <Header />
       <Shopnow />
+      <Logo />
       <div className="card-container"> {/* Conteneur des cartes */}
         <Card image={HS} title="Hoodies & Sweatshirts" />
         <Card image={CP} title="Coats & Parkas" />
