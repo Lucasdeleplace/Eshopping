@@ -1,0 +1,84 @@
+.clothes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 70px;
+  width: min-content;
+  margin-left: 175px;
+  margin-bottom: 0%;
+}
+
+.gras{ 
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  margin-left: 175px;
+}
+.slogan {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  margin-left: 175px;
+}
+
+.labeel {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E6C744;
+  display: inline-block;
+  transform: skew(5deg);
+  color: #000; 
+}
+
+.image {
+  width: 45%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.containeer {
+  display: flex; 
+  background-color:#C2C8DA;
+  position: relative;
+  width: 100%;
+}
+
+.outer-container {
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  text-align: justify;
+  flex-direction: column; 
+  flex-grow:unset;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-shrink:0; 
+  height: 100%; 
+}
+
+.catalog {
+  color: white;
+  background-color: #000; 
+  border: none;
+  padding: 10px 20px;
+  margin-left: 165px;
+  margin-right: 255px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transform: skew(-5deg); 
+  border-radius: 5%;
+  margin-bottom: 5%;
+}
+
+a{
+ text-decoration: none; 
+}
+

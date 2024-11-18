@@ -1,0 +1,87 @@
+.clothes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 70px;
+  width: min-content;
+  margin-left: 175px;
+}
+.gras{ 
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  margin-left: 175px;
+}
+.info {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  margin-left: 175px;
+}
+
+.label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white; /* Couleur de fond similaire */
+  transform: skew(-5deg); /* Inclinaison du rectangle en diagonale */
+  margin: 20px; /* Pour espacer le label des autres éléments */
+}
+
+.label span {
+  display: inline-block;
+  transform: skew(5deg); /* Redresse le texte pour annuler l'inclinaison */
+  color: #000; /* Couleur du texte en noir */
+}
+
+.image {
+  width: 45%; /* Limite la largeur de l'image à 65% du conteneur */
+  height: auto; /* Conserve les proportions de l'image */
+  object-fit: cover; /* Maintient les proportions sans déformation */
+}
+
+.container {
+  display: flex; /* Utilise flexbox pour aligner le texte et l'image */
+  background-color:#E6C744; /* Applique la couleur de fond */
+  position: relative;
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+.outer-container {
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  text-align: justify;
+  flex-direction: column; /* Empile les éléments verticalement *//* Espacement entre les éléments texte et bouton */
+  flex-grow:unset; /* Permet au texte de prendre tout l'espace disponible */
+  flex-direction: column; /* Empile les éléments verticalement */ /* Espacement entre les éléments texte et bouton */
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Aligne l'image à gauche */
+  position: relative;
+  flex-shrink:0; /* L'image ne rétrécira pas si le conteneur est plus petit */
+  flex-shrink: initial; /* L'image ne rétrécira pas si le conteneur est plus petit */
+  height: 100%; /* Prend toute la hauteur disponible du conteneur */
+}
+
+.catalog {
+  color: white;
+  background-color: #000; /* Couleur de fond du bouton */
+  border: none;
+  padding: 10px 20px;
+  margin-left: 165px;
+  margin-right: 255px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transform: skew(-5deg); /* Inclinaison du rectangle en diagonale */
+}
+
+a {
+  text-decoration: none; /* Retire le soulignement du lien */
+
+}
