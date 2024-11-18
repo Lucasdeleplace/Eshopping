@@ -1,0 +1,12 @@
+.pub-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e6c744;
+  padding: 10px;
+}
+
+.pub-logo {
+  height: 50px;
+  margin: 0 10px;
+}
