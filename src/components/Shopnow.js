@@ -18,9 +18,10 @@ function Shopnow() {
           <p className="slogan">
             Live for influential and innovative fashion !
           </p>
+          <button className="catalog">Shop Now
           <a href="Lecatalog">
-          <button className="catalog">Shop Now</button>
           </a>
+          </button>
         </div>
         <img src={Pinkgirl} alt="PinkGirl" className="image" />
       </div>

@@ -8,6 +8,9 @@ import Card from "../components/Card";
 import TT from "../assets/TT.png";
 import HS from "../assets/HS.png";
 import CP from "../assets/CP.png";
+import Application from "../components/Application";
+
+
 
 
 function Acceuil() {
@@ -22,6 +25,7 @@ function Acceuil() {
         <Card image={TT} title="Tees & T-Shirts" />
       </div>
       <Payday />
+      <Application />
       <Footer/>
     </div>
   );

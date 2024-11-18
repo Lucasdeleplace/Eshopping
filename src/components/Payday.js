@@ -12,9 +12,10 @@ function Payday() {
       <p className="info">Spend minimal $100 get 30% off <br></br>voucher code for your next purchase</p>
       <p className="gras">1 June - 10 June 2021</p>
       <p className="info">*Terms & Conditions apply</p>
+      <button className="catalog">Shop Now
       <a href="Lecatalog">
-      <button className="catalog">Shop Now</button>
       </a>
+      </button>
       </div>  
       </div>
       </div>
