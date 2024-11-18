@@ -1,149 +1,104 @@
-/* Footer global */
 .footer {
-  background-color: #000000;
-  padding: none;
-  color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap; /* Permet d'ajuster l'affichage des colonnes sur petits écrans */
-  justify-content: space-between;
-  text-align: left;
-}
-
-.fashiony {
-  margin-top: auto;
-  padding-top: 4px;
-}
-
-.headera {
-  color: #FFFFFF !important;
-}
-
-.greya {
-  color: #8E8E8E !important;
-}
-
-/* Pour chaque colonne */
-.footer-column_menu-column .footer-column_fashion-column .footer-column_quick-links-column .footer-column_legal-column {
-  flex: 1 1 22%; /* Chaque colonne prend 22% de la largeur (ce qui permet d'avoir 4 colonnes sur un grand écran) */
-  margin: 10px; /* Marge pour espacer les colonnes */
-}
-
-/* Colonne Fashion */
-.footer .footer-column_fashion-column .fashiony {
-  list-style-type: none;
-  padding: 0;
-  text-decoration: none;
-  display: block;
-}
-
-.footer-column_fashion-column .social-icons {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Réduire la taille des icônes au survol */
-.footer-column_fashion-column .social-icons a img {
-  transition: transform 0.3s ease;
+.footer-section {
+  flex: 1;
+  min-width: 250px;
 }
 
-.footer-column_fashion-column .social-icons a:hover img {
-  transform: scale(1.1); /* Agrandir légèrement l'icône au survol */
+.footer-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* Menu colonne (Company) */
-.footer-column_menu-column ul {
-  list-style-type: none;
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ecc94b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon.facebook::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png");
+}
+
+.icon.instagram::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png");
+}
+
+.icon.twitter::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/twitter.png");
+}
+
+.icon.linkedin::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/linkedin.png");
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.links-column {
+  min-width: 150px;
+}
+
+.links-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.links-column ul {
+  list-style: none;
   padding: 0;
 }
 
-.fashiony .legal-column .quick-links-column .menu-column a:hover {
-  color: #FFD700; /* Changer la couleur au survol */
+.links-column ul li {
+  margin-bottom: 10px;
 }
 
-/* Colonne Quick Links */
-.quick-links-column ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-column_quick-links-column a {
+.links-column ul li a {
   text-decoration: none;
-  display: block;
-  margin: 5px 0;
+  color: #cfcfcf;
+  font-size: 14px;
 }
 
-.footer-column_menu-column a {
-  text-decoration: none;
-  display: block;
-  margin: 5px 0;
-}
-
-.footer-column_legal-column a {
-  text-decoration: none;
-  display: block;
-  margin: 5px 0;
-}
-
-.footer .footer-column_legal-column .footer-column_menu-column .footer-column_quick-links-column .fashdet {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-/* Colonne Legal */
-.legal-column ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.legal-column a {
-  text-decoration: none;
-  display: block;
-  margin: 5px 0;
-}
-
-/* Colonne - Liens au survol */
-.footer a:hover { 
-  color: #FFD700;
-}
-
-/* Responsive Design : Pour les petits écrans */
-@media (max-width: 768px) {
-  .footer {
-      flex-direction: column; /* Les colonnes deviennent une seule colonne */
-      align-items: center; /* Centrer le contenu */
-  }
-
-  .footer-column_fashion-column .footer-column_legal-column .footer-column_menu-column .footer-column_quick-links-column {
-      flex: 1 1 100%; /* Chaque section prend toute la largeur */
-      margin-bottom: 20px;
-      text-align: center;
-  }
-
-  .footer-column_fashion-column .social-icons {
-      justify-content: center;
-  }
-}
-/* Style des icônes sociales avec un fond coloré et des bords arrondis */
-.footer-column_fashion-column .social-icons a {
-  display: inline-block;  /* Permet d'ajuster l'élément comme un bloc */
-  background-color: #EBD96B;  /* Couleur de fond (dorée ou autre) */
-  padding: 12px;  /* L'espace autour du logo, ajusté pour rendre le carré plus grand que l'icône */
-  border-radius: 30%;  /* Bord arrondi. */
-  transition: transform 0.3s ease, background-color 0.3s ease;  /* Animation pour l'effet au survol */
-  margin: 5px;  /* Espacement entre les icônes */
-  box-sizing: content-box;  /* Garantit que padding ne modifie pas la taille du carré */
-}
-
-/* Taille des icônes */
-.footer-column_fashion-column .social-icons a img {
-  width: 25px;  /* Largeur de l'icône */
-  height: 25px;  /* Hauteur de l'icône */
-  object-fit: cover;  /* Assure que l'image reste dans les dimensions spécifiées sans déformation */
-}
-
-/* Effet au survol */
-.footer-column_fashion-column .social-icons a:hover {
-  background-color: #FFD700;  /* Changer la couleur de fond au survol */
-  transform: scale(1.1);  /* Agrandir légèrement l'icône et le fond au survol */
+.links-column ul li a:hover {
+  color: #fff;
 }
