@@ -8,6 +8,7 @@ import TT from "../assets/TT.png";
 import HS from "../assets/HS.png";
 import CP from "../assets/CP.png";
 import Application from "../components/Application";
+import Contact from "../components/Contact";
 
 
 
@@ -24,6 +25,7 @@ function Acceuil() {
       </div>
       <Payday />
       <Application />
+      <Contact />
       <Footer/>
     </div>
   );

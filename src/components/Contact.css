@@ -1,0 +1,29 @@
+.email {
+    color: white;
+    text-align: center;
+}
+
+.shoppingCommunity {
+    color: white;
+    text-align: center;
+}
+
+.contactForm {
+    padding: 5%;
+    background-color: #E6C744;
+    
+
+}
+
+.labelForm {
+    margin-left: 40%;
+    padding: 15px;
+    padding-right: 5%;
+}
+
+.enregistrer {
+    position: absolute;
+    left: 53%;
+    top: 277%;
+    padding: 7px;
+}
