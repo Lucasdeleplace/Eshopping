@@ -1,7 +1,7 @@
 /* Footer global */
 .footer {
   background-color: #000000;
-  padding: 20px;
+  padding: none;
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap; /* Permet d'ajuster l'affichage des colonnes sur petits écrans */
@@ -9,52 +9,55 @@
   text-align: left;
 }
 
-#fashiony {
+.fashiony {
   margin-top: auto;
   padding-top: 4px;
 }
 
+.headera {
+  color: #FFFFFF !important;
+}
+
+.greya {
+  color: #8E8E8E !important;
+}
+
 /* Pour chaque colonne */
-.footer-column {
+.footer-column_menu-column .footer-column_fashion-column .footer-column_quick-links-column .footer-column_legal-column {
   flex: 1 1 22%; /* Chaque colonne prend 22% de la largeur (ce qui permet d'avoir 4 colonnes sur un grand écran) */
   margin: 10px; /* Marge pour espacer les colonnes */
 }
 
 /* Colonne Fashion */
-.fashion-column ul {
+.footer .footer-column_fashion-column .fashiony {
   list-style-type: none;
   padding: 0;
+  text-decoration: none;
+  display: block;
 }
 
-.fashion-column .social-icons {
+.footer-column_fashion-column .social-icons {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
 /* Réduire la taille des icônes au survol */
-.fashion-column .social-icons a img {
+.footer-column_fashion-column .social-icons a img {
   transition: transform 0.3s ease;
 }
 
-.fashion-column .social-icons a:hover img {
+.footer-column_fashion-column .social-icons a:hover img {
   transform: scale(1.1); /* Agrandir légèrement l'icône au survol */
 }
 
 /* Menu colonne (Company) */
-.menu-column ul {
+.footer-column_menu-column ul {
   list-style-type: none;
   padding: 0;
 }
 
-.menu-column a {
-  text-decoration: none;
-  color: #8E8E8E;
-  display: block;
-  margin: 5px 0;
-}
-
-.menu-column a:hover {
+.fashiony .legal-column .quick-links-column .menu-column a:hover {
   color: #FFD700; /* Changer la couleur au survol */
 }
 
@@ -64,20 +67,25 @@
   padding: 0;
 }
 
-.quick-links-column a {
+.footer-column_quick-links-column a {
   text-decoration: none;
-  color: #8E8E8E;
   display: block;
   margin: 5px 0;
 }
 
-/* Sélecteur pour les liens dans la section 'Company' */
-.footer .headera {
-  color: #FFFFFF; /* Blanc pour les en-tête de sections */
+.footer-column_menu-column a {
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
 }
 
-.footer .greya {
-  color: #8E8E8E;
+.footer-column_legal-column a {
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer .footer-column_legal-column .footer-column_menu-column .footer-column_quick-links-column .fashdet {
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -90,13 +98,12 @@
 
 .legal-column a {
   text-decoration: none;
-  color: #8E8E8E;
   display: block;
   margin: 5px 0;
 }
 
 /* Colonne - Liens au survol */
-a:hover {
+.footer a:hover { 
   color: #FFD700;
 }
 
@@ -107,18 +114,18 @@ a:hover {
       align-items: center; /* Centrer le contenu */
   }
 
-  .footer-column {
+  .footer-column_fashion-column .footer-column_legal-column .footer-column_menu-column .footer-column_quick-links-column {
       flex: 1 1 100%; /* Chaque section prend toute la largeur */
       margin-bottom: 20px;
       text-align: center;
   }
 
-  .fashion-column .social-icons {
+  .footer-column_fashion-column .social-icons {
       justify-content: center;
   }
 }
 /* Style des icônes sociales avec un fond coloré et des bords arrondis */
-.fashion-column .social-icons a {
+.footer-column_fashion-column .social-icons a {
   display: inline-block;  /* Permet d'ajuster l'élément comme un bloc */
   background-color: #EBD96B;  /* Couleur de fond (dorée ou autre) */
   padding: 12px;  /* L'espace autour du logo, ajusté pour rendre le carré plus grand que l'icône */
@@ -129,14 +136,14 @@ a:hover {
 }
 
 /* Taille des icônes */
-.fashion-column .social-icons a img {
+.footer-column_fashion-column .social-icons a img {
   width: 25px;  /* Largeur de l'icône */
   height: 25px;  /* Hauteur de l'icône */
   object-fit: cover;  /* Assure que l'image reste dans les dimensions spécifiées sans déformation */
 }
 
 /* Effet au survol */
-.fashion-column .social-icons a:hover {
+.footer-column_fashion-column .social-icons a:hover {
   background-color: #FFD700;  /* Changer la couleur de fond au survol */
   transform: scale(1.1);  /* Agrandir légèrement l'icône et le fond au survol */
 }
