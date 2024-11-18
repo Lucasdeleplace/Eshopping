@@ -5,7 +5,9 @@
   font-size: 70px;
   width: min-content;
   margin-left: 175px;
+  margin-bottom: 0%;
 }
+
 .gras{ 
   font-weight: bold;
   font-family: "Poppins", sans-serif;
@@ -13,22 +15,17 @@
   font-size: 25px;
   margin-left: 175px;
 }
-p {
+.slogan {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 25px;
   margin-left: 175px;
 }
 
-.label {
+.labeel {
   display: inline-block;
   padding: 10px 20px;
-  background-color: white; 
-  transform: skew(-5deg);
-  margin: 20px; 
-}
-
-.label span {
+  background-color: #E6C744;
   display: inline-block;
   transform: skew(5deg);
   color: #000; 
@@ -40,13 +37,11 @@ p {
   object-fit: cover;
 }
 
-.container {
+.containeer {
   display: flex; 
-  text-align: justify-content;
-  background-color:#E6C744;
-  padding: 20px;
+  background-color:#C2C8DA;
   position: relative;
-  width: 65%;
+  width: 100%;
 }
 
 .outer-container {
@@ -68,7 +63,7 @@ p {
   height: 100%; 
 }
 
-button {
+.catalog {
   color: white;
   background-color: #000; 
   border: none;
@@ -79,9 +74,11 @@ button {
   font-weight: 500;
   cursor: pointer;
   transform: skew(-5deg); 
+  border-radius: 5%;
+  margin-bottom: 5%;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+a{
+ text-decoration: none; 
 }
+

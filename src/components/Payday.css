@@ -13,7 +13,7 @@
   font-size: 25px;
   margin-left: 175px;
 }
-p {
+.info {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 25px;
@@ -42,11 +42,9 @@ p {
 
 .container {
   display: flex; /* Utilise flexbox pour aligner le texte et l'image */
-  text-align: justify-content;
   background-color:#E6C744; /* Applique la couleur de fond */
-  padding: 20px;
   position: relative;
-  width: 65%; /* Prend toute la largeur disponible */
+  width: 100%; /* Prend toute la largeur disponible */
 }
 
 .outer-container {
@@ -59,7 +57,6 @@ p {
   flex-direction: column; /* Empile les éléments verticalement *//* Espacement entre les éléments texte et bouton */
   flex-grow:unset; /* Permet au texte de prendre tout l'espace disponible */
   flex-direction: column; /* Empile les éléments verticalement */ /* Espacement entre les éléments texte et bouton */
-  flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
 }
 
 .image-wrapper {
@@ -71,7 +68,7 @@ p {
   height: 100%; /* Prend toute la hauteur disponible du conteneur */
 }
 
-button {
+.catalog {
   color: white;
   background-color: #000; /* Couleur de fond du bouton */
   border: none;
@@ -86,5 +83,5 @@ button {
 
 a {
   text-decoration: none; /* Retire le soulignement du lien */
-  color: white;
+
 }
